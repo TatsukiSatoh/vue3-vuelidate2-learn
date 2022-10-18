@@ -1,8 +1,11 @@
 <script setup>
 import { reactive } from 'vue';
 import { useVuelidate } from '@vuelidate/core';
-import { required, email } from "@vuelidate/validators"
 
+// english version
+// import { required, email } from "@vuelidate/validators"
+// jananese version
+import { required, email } from './utils/i18n-validators';
 const formData = reactive({
   name: '',
   age: '',
